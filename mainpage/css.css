@@ -67,7 +67,7 @@ ul,li{list-style: none;}
 .top-right .hotline{border-right:1px solid #fff;line-height: 38px;}
 .top-right i[class*="uk-icon"]{margin-right: 5px;}
 .top-right .shop{ background:#0ba29b; border-radius:13px; height:24px; line-height:24px; margin-left: 20px;}
-.head-nav{ border-bottom:1px solid #d5d5d5;background:#000;}
+.head-nav{ border-bottom:1px solid #d5d5d5;background:#fff;}
 .h-nav li{ float: left; margin:15px 15px 0px;}
 .h-nav li a{ display: inline-block; width:80px; height: 75px; line-height: 75px; text-align: center;}
 .h-nav li.active:after{content: ""; width: 100%; height: 1px; display: block; border-bottom:2px solid #0ba29b; margin-top: 16px;}
