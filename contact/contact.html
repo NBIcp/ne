@@ -139,7 +139,7 @@
 
 		<tr>
             <th>建议留言</th>
-            <td><textarea name="suggestion"></textarea><br>
+            <td><textarea id="msg" name="msg"></textarea><br>
 <!--<input type="text" name="suggestion" class="popup-btn"></td>-->
         </tr>
         
@@ -160,9 +160,9 @@
         }
         var name = $("input[name='name']").val();
         var iphone = $("input[name='iphone']").val();
-		var comname = $("input[name='somname']").val();
-		var suggestion = $("input[name='suggestion']").val();
-        var body = name +"\n"+iphone + "\n" +comname +"\n" +suggestion;
+		var comname = $("input[name='comname']").val();
+		var msg = $("#msg").val();
+        var body = name +"\n"+iphone + "\n" +comname +"\n" +msg;
         if (typeof body !== 'undefined') {
             args.push('body=' + encodeURIComponent(body))
         }
