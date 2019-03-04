@@ -114,13 +114,56 @@
 <div class="tm-section">
     <div class="uk-container uk-container-center">
         <h1>您的需求我们会尽快回复您</h1>
-<form action="mailto:yourname@domain.com" enctype="text/plain"> 
-主题：<input name="subject" type="text"><br> 
-抄送：<input name="cc" type="text"><br> 
-密送：<input name="bcc" type="text"><br> 
-正文：<textarea name="body"></textarea><br> 
+<form action="mailto:457053886@qq.com" enctype="text/plain"> 
+联系电话：<input name="subject" type="text"><br> 
+建议留言：<textarea name="body"></textarea><br> 
 <input type="submit"> 
 </form> 
+
+<form name="form" method="post" action="457053886@qq.com" enctype="text/plain">
+    <table cellpadding="0" cellspacing="0">
+        <tr>
+            <th>姓名</th>
+            <td><input type="text" name="name" class="popup-btn"></td>
+        </tr>
+
+        <tr>
+            <th>联系电话</th>
+            <td><input type="text" name="iphone" class="popup-btn"></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><input name="close"  type="bottn" onclick="getMailtoUrl()" class="popup-btn popup-btn1" value="提交申请">
+            </td>
+        </tr>
+    </table>
+</form>
+
+
+<script type="text/javascript">
+    function getMailtoUrl() {
+        var args = [];
+        if (typeof subject !== 'undefined') {
+            args.push('subject=' + encodeURIComponent('主题内容'));
+        }
+        var name = $("input[name='name']").val();
+        var iphone = $("input[name='iphone']").val();
+        var body = name +"\n"+iphone
+        if (typeof body !== 'undefined') {
+            args.push('body=' + encodeURIComponent(body))
+        }
+
+        var url = 'mailto:' + encodeURIComponent('service@kashuo.com');
+        if (args.length > 0) {
+            url += '?' + args.join('&');
+        }
+        console.log(url);
+        window.location = url;
+        return url;
+    }
+</script>
+
 
 	</div>
 </div>
