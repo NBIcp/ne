@@ -111,7 +111,9 @@
 	</div>
 	<iframe src="/ne/public/map/newmap.htm" frameborder="0" width="100%" height="500"></iframe>
         
-
+<div class="tm-section">
+    <div class="uk-container uk-container-center">
+        <h1>您的需求我们会尽快回复您</h1>
 <form action="mailto:yourname@domain.com" enctype="text/plain"> 
 主题：<input name="subject" type="text"><br> 
 抄送：<input name="cc" type="text"><br> 
@@ -120,10 +122,14 @@
 <input type="submit"> 
 </form> 
 
+	</div>
+</div>
+</div>
+ <!--   
 <div class="tm-section">
     <div class="uk-container uk-container-center">
         <h1>您的需求我们会尽快回复您</h1>
-        <form class="uk-form" action="http://www.schwarzwaldcn.com/plus/list.php?tid=5" enctype="multipart/form-data" method="post">
+        <form class="uk-form" action="mailto:457053886@qq.com" enctype="multipart/form-data" method="post">
             <input type="hidden" name="action" value="post">
             <input type="hidden" name="diyid" value="1">
             <input type="hidden" name="do" value="2">
@@ -140,46 +146,14 @@
             </div>
             
             <div class="uk-grid">
-                <div class="uk-width-1-4"><input type="text" name="validate" id="vdcode" placeholder="" size="8" class="uk-width-1-1 uk-form-large"></div>
-                <div class="uk-width-1-4"><img id="vdimgck" align="absmiddle" onclick="this.src=this.src+&#39;?&#39;" style="cursor: pointer; height:40px" alt="看不清？点击更换" src="http://www.schwarzwaldcn.com/include/vdimgck.php"></div>
+               
                 <div class="uk-width-1-4 uk-push-1-4"><input type="submit" name="submit" class="uk-width-1-1 uk-button-large c-button"></div>
             </div>
         </form>
     </div>
-    <script>
-    $(function(){
-        $('.c-button').click(function(){
-            if($("#cname").val()!=''&$("#name").val()!=''&$("#tel").val()!=''&$("#email").val()!=''&$("#msg").val()!=''){
-                var dataString = 'cname='+ $("#cname").val() + '&name=' + $("#name").val() + '&tel=' + $("#tel").val() + '&email=' + $("#email").val() + '&msg=' + $("#msg").val()+ '&validate=' + $("#vdcode").val()+ '&action=post'+ '&diyid=1&do=2&dede_fields=cname,text;name,text;tel,text;email,text;mes,multitext&dede_fieldshash=01303bc4d7ae717267271ff29bdb0cbb';
-                $.ajax({ 
-                    type: "POST", 
-                    url: "/plus/diy.php", 
-                    data: dataString, 
-                    success: function(data) { 
-                        if(data=="OK"){
-                            UIkit.notify("提交成功！",{status:'success'});
-                            window.location.reload()
-                    }else{
-                        if(data=='valierror'){
-                            UIkit.notify("验证码不正确！",{status:'danger'});
-                        }else{
-                            UIkit.notify(data,{status:'danger'});
-                        }
-                            
-                        }
-                    } 
-                }); 
-            }else{
-                UIkit.notify("请填写完整！",{status:'danger'});
-            }
-            
-        return false;
-        })
-    })
-    
-    </script>
+
 </div>
-    </div>
+    </div>-->
 
          <div class="footer"></div>        
                 
