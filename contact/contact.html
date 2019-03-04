@@ -132,9 +132,19 @@
             <td><input type="text" name="iphone" class="popup-btn"></td>
         </tr>
 
-        <tr>
+		<tr>
+            <th>公司名称</th>
+            <td><input type="text" name="comname" class="popup-btn"></td>
+        </tr>
+
+		<tr>
+            <th>建议留言</th>
+            <td><input type="text" name="suggestion" class="popup-btn"></td>
+        </tr>
+        
+		<tr>
             <td></td>
-            <td><input name="close"  type="bottn" onclick="getMailtoUrl()" class="popup-btn popup-btn1" value="提交申请">
+            <td><input type="bottn" name="close"   onclick="getMailtoUrl()" class="popup-btn popup-btn1" value="提交申请">
             </td>
         </tr>
     </table>
@@ -149,7 +159,9 @@
         }
         var name = $("input[name='name']").val();
         var iphone = $("input[name='iphone']").val();
-        var body = name +"\n"+iphone
+		var comname = $("input[name='somname']").val();
+		var suggestion = $("input[name='suggestion']").val();
+        var body = name +"\n"+iphone + "\n" +comname +"\n" +suggestion;
         if (typeof body !== 'undefined') {
             args.push('body=' + encodeURIComponent(body))
         }
