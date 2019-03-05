@@ -145,7 +145,7 @@
         
 		<tr>
             <td></td>
-            <td><input type="bottn" name="close"   onclick="getMailtoUrl()" class="popup-btn popup-btn1" value="提交申请">
+            <td><input type="submit" name="close"   onclick="getMailtoUrl()" class="popup-btn popup-btn1" value="提交申请">
             </td>
         </tr>
     </table>
@@ -155,14 +155,18 @@
 <script type="text/javascript">
     function getMailtoUrl() {
         var args = [];
-        if (typeof subject !== 'undefined') {
-            args.push('subject=' + encodeURIComponent('主题内容'));
-        }
+        //if (typeof subject !== 'undefined') {
+        //    args.push('subject=' + encodeURIComponent('主题内容'));
+        //}
         var name = $("input[name='name']").val();
         var iphone = $("input[name='iphone']").val();
 		var comname = $("input[name='comname']").val();
 		var msg = $("#msg").val();
-        var body = name +"\n"+iphone + "\n" +comname +"\n" +msg;
+		var subject =  "name: "+name +"\n tel: "+iphone + "\n comname: " +comname +"\n";
+		if (typeof subject !== 'undefined') {
+            args.push('subject=' + encodeURIComponent(subject));
+        }
+        var body = msg;
         if (typeof body !== 'undefined') {
             args.push('body=' + encodeURIComponent(body))
         }
