@@ -170,7 +170,7 @@
 		var msg = $("#msg").val();
 		var subject =  "name: "+name +"\n tel: "+iphone + "\n comname: " +comname +"\n";
 		if (typeof subject !== 'undefined') {
-            args.push('subject=' + encodeURIComponent(subject));
+            args.push('subject=' + subject);
         }
 		var body = msg;
         //var body = "name: "+name +"\n tel: "+iphone;
