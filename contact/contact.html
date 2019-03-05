@@ -223,7 +223,8 @@
         var name = $("#name").val();
         var iphone = $("input[name='tel']").val();
 		
-		var msg = $("input[name='msg']").val();
+		//var msg = $("input[name='msg']").val();
+		var msg = $("#msg").val();
 		var subject = "name:" + name + "tel:" + iphone + "comname:" + comname;
 		if (typeof subject !== "undefined") {
             args.push("subject=" + subject);
