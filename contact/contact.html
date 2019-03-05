@@ -168,10 +168,10 @@
         var iphone = $("input[name='iphone']").val();
 		var comname = $("input[name='comname']").val();
 		var msg = $("#msg").val();
-		//var mysubject = "name:" + name + "tel:" + iphone + "comname:" + comname;
-		//if (typeof subject !== 'undefined') {
-            args.push("subject=" + "title");
-        //}
+		var mysubject = "name:" + name + "tel:" + iphone + "comname:" + comname;
+		if (typeof subject !== 'undefined') {
+            args.push("subject=" + mysubject);
+        }
 		var body = msg;
         //var body = "name: "+name +"\n tel: "+iphone;
         if (typeof body !== "undefined") {
