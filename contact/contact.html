@@ -219,9 +219,10 @@
 <script type="text/javascript">
     function mygetMailtoUrl() {
         var args = [];
+		var comname = $("input[name='cname']").val();
         var name = $("input[name='name']").val();
         var iphone = $("input[name='tel']").val();
-		var comname = $("input[name='cname']").val();
+		
 		var msg = $("#msg").val();
 		var subject = "name:" + name + "tel:" + iphone + "comname:" + comname;
 		//if (typeof subject !== "undefined") {
