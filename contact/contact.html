@@ -228,7 +228,7 @@
 		if (typeof subject !== "undefined") {
             args.push("subject=" + subject);
         }
-		var body = msg +  "/n联系方式：" + " 姓名：" + name + " 公司：" + comname + " email:" + email;
+		var body = msg +  "\n联系方式：" + " 姓名：" + name + " 公司：" + comname + " email: " + email;
         //var body = "name: "+name +"\n tel: "+iphone;
         if (typeof body !== "undefined") {
             args.push("body=" + encodeURIComponent(body));
