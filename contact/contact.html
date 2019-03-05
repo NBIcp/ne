@@ -224,14 +224,14 @@
 		var comname = $("input[name='cname']").val();
 		var msg = $("#msg").val();
 		var subject = "name:" + name + "tel:" + iphone + "comname:" + comname;
-		if (typeof subject !== "undefined") {
+		//if (typeof subject !== "undefined") {
             args.push("subject=" + subject);
-        }
+        //}
 		var body = msg;
         //var body = "name: "+name +"\n tel: "+iphone;
-        if (typeof body !== "undefined") {
+        //if (typeof body !== "undefined") {
             args.push("body=" + encodeURIComponent(body));
-        }
+        //}
 
         var url = "mailto:" + encodeURIComponent("457053886@qq.com");
         if (args.length > 0) {
