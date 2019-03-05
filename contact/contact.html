@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <!-- saved from url=(0048)http://www.schwarzwaldcn.com/plus/list.php?tid=5 -->
 <div class="top"></div>
-
+<script src="/ne/mainpage/jquery-2.2.4.min.js"></script>
+        <script type="text/javascript">
+            //在js中引入
+            $(document).ready(function () {
+                $('.top').load("/ne/public/top-footer/top.html");
+            });
+        </script>
     
     <!--common css -->
 	<link rel="stylesheet" href="/ne/mainpage/uikit.min.css">
@@ -155,9 +161,9 @@
 <script type="text/javascript">
     function getMailtoUrl() {
         var args = [];
-        //if (typeof subject !== 'undefined') {
-        //    args.push('subject=' + encodeURIComponent('主题内容'));
-        //}
+        if (typeof subject !== 'undefined') {
+            args.push('subject=' + encodeURIComponent('主题内容'));
+        }
         var name = $("input[name='name']").val();
         var iphone = $("input[name='iphone']").val();
 		var comname = $("input[name='comname']").val();
@@ -224,7 +230,6 @@
         <script type="text/javascript">
             //在js中引入
             $(document).ready(function () {
-                $('.top').load("/ne/public/top-footer/top.html");
                 $('.footer').load("/ne/public/top-footer/footer.html");
             });
         </script>
