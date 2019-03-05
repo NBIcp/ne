@@ -215,15 +215,10 @@
                 <div class="uk-width-1-4 uk-push-1-4"><input type="submit" name="submit"  onclick="mygetMailtoUrl()" class="uk-width-1-1 uk-button-large c-button"></div>
             </div>
         </form>
-    </div>
-</div>
-
-  <script type="text/javascript">
+        
+<script type="text/javascript">
     function mygetMailtoUrl() {
         var args = [];
-        //if (typeof subject !== 'undefined') {
-        //    args.push('subject=' + encodeURIComponent('主题内容'));
-        //}
         var name = $("input[name='name']").val();
         var iphone = $("input[name='tel']").val();
 		var comname = $("input[name='cname']").val();
@@ -247,6 +242,11 @@
         return url;
     }
 </script>  
+        
+    </div>
+</div>
+
+ 
     
     
 
