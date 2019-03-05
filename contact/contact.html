@@ -207,7 +207,7 @@
                 <div class="uk-width-1-2"><input type="text" name="email" id="email" placeholder="电子邮箱" class="uk-width-1-1 uk-form-large"></div>
             </div>
             <div class="uk-grid">
-                <div class="uk-width-1-1"><textarea class="uk-width-1-1 uk-form-large" id="msg" name="msg" placeholder="建议留言" style="margin-top: 0px; margin-bottom: 0px; height: 334px;"></textarea></div>
+                <div class="uk-width-1-1"><textarea class="uk-width-1-1 uk-form-large popup-btn" id="msg" name="msg" placeholder="建议留言" style="margin-top: 0px; margin-bottom: 0px; height: 334px;"></textarea></div>
             </div>
             
             <div class="uk-grid">
@@ -225,9 +225,9 @@
 		
 		var msg = $("#msg").val();
 		var subject = "name:" + name + "tel:" + iphone + "comname:" + comname;
-		//if (typeof subject !== "undefined") {
+		if (typeof subject !== "undefined") {
             args.push("subject=" + subject);
-        //}
+        }
 		var body = msg;
         //var body = "name: "+name +"\n tel: "+iphone;
         //if (typeof body !== "undefined") {
