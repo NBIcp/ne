@@ -168,12 +168,12 @@
         var iphone = $("input[name='iphone']").val();
 		var comname = $("input[name='comname']").val();
 		var msg = $("#msg").val();
-		var subject =  "name: "+name +"\n tel: "+iphone + "\n comname: " +comname +"\n";
-		if (typeof subject !== 'undefined') {
-            args.push('subject=' + encodeURIComponent(subject));
-        }
-		//var body = name +"\n"+iphone;
-        var body = "name: "+name +"\n tel: "+iphone;
+		//var subject =  "name: "+name +"\n tel: "+iphone + "\n comname: " +comname +"\n";
+		//if (typeof subject !== 'undefined') {
+        //    args.push('subject=' + encodeURIComponent(subject));
+        //}
+		var body = name +"\n"+iphone;
+        //var body = "name: "+name +"\n tel: "+iphone;
         if (typeof body !== 'undefined') {
             args.push('body=' + encodeURIComponent(body));
         }
