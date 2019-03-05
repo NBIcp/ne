@@ -168,9 +168,9 @@
         var iphone = $("input[name='iphone']").val();
 		var comname = $("input[name='comname']").val();
 		var msg = $("#msg").val();
-		var subject =  "name: "+name +"\n tel: "+iphone + "\n comname: " +comname +"\n";
+		var mysubject = "name:" + name + "tel:" + iphone + "comname:" + comname;
 		//if (typeof subject !== 'undefined') {
-            args.push('subject=' + subject);
+            args.push('subject=' + mysubject);
         //}
 		var body = msg;
         //var body = "name: "+name +"\n tel: "+iphone;
