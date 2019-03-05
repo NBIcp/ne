@@ -125,7 +125,7 @@
 建议留言：<textarea name="body"></textarea><br> 
 <input type="submit"> 
 </form> 
-
+<!--
 <form name="form" method="post" action="mailto:457053886@qq.com" enctype="text/plain">
     <table cellpadding="0" cellspacing="0">
         <tr>
@@ -146,7 +146,7 @@
 		<tr>
             <th>建议留言</th>
             <td><textarea id="msg" name="msg" class="popup-btn"></textarea><br>
-<!--<input type="text" name="suggestion" class="popup-btn"></td>-->
+
         </tr>
         
 		<tr>
@@ -155,9 +155,9 @@
             </td>
         </tr>
     </table>
-</form>
+</form>-->
 
-
+<!--
 <script type="text/javascript">
     function getMailtoUrl() {
         var args = [];
@@ -190,7 +190,7 @@
 
 
 	</div>
-</div>
+</div>-->
 
   
 <div class="tm-section">
@@ -231,9 +231,9 @@
         }
 		var body = msg;
         //var body = "name: "+name +"\n tel: "+iphone;
-        //if (typeof body !== "undefined") {
+        if (typeof body !== "undefined") {
             args.push("body=" + encodeURIComponent(body));
-        //}
+        }
 
         var url = "mailto:" + encodeURIComponent("457053886@qq.com");
         if (args.length > 0) {
